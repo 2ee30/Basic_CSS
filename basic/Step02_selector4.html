@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step02_selector4.html</title>
+    <style>
+        .my-class{background-color: yellow;}
+
+        h1{color: blue;}
+        /* 선택자의 가중치가 같다면 나중에 정의한 css 가 적용된다. */
+        h1{
+            color: red;
+            background-color: #cecece;
+        }
+        /*
+            css 가중치
+
+            요소명: 1점
+            클래스명: 10점
+            아이디: 100점
+            inline css: 1000점
+            !important: 10000점
+        */
+
+        #one li{ /* css 가중치 : 100 + 1 */
+            color: #00ffff;
+        }
+
+
+        .container li{ /* css 가중치 : 10 + 1 */
+            color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>순서없는 목록 입니다.</h1>
+        <ul>
+            <li>하나</li>
+            <li>두울</li>
+        </ul>
+        <h1 class="my-class">친구 목록 입니다.</h1>
+        <ul id="one">
+            <li>김구라</li>
+            <li>해골</li>
+        </ul>
+    </div>
+</body>
+</html>

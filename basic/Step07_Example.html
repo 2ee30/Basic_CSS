@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step07_Example.html</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            cursor: pointer;
+            position: relative;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="one"></div>
+<script>
+    // left 값을 관리할 변수 만들고 0 대입하기
+    var left=0;
+
+    document.querySelector("#one")
+    .addEventListener("click", function(){
+        // left 값 100증가 시키기
+        left += 100;
+        // 클릭한 그 요소의 css 변경시키기
+        this.style.left=left+"px";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example2.html</title>
+    <style>
+        .wrapper{
+            width: 768px;
+            border: 1px solid red;
+            margin: 0 auto; /* 가운데 정렬 */
+            /* 1. 부모 div 의 position 을 relative 로 지정 */
+            position: relative;
+            /* 집나간 자식 챙피하니까 숨기기 */
+            overflow: hidden;
+        }
+        .menu{
+            width: 200px;
+            height: 500px;
+            border: 1px solid blue;
+            background-color: yellow;
+            /* 2. 자식 div 의 position  을 absolute 로 하면 */
+            position: absolute;
+            /* 3. top, left 는 부모 div 를 기준으로 인식된다. */
+            left: -200px;
+            /*  left 값이 변하면 0.5 초 동안 서서히 변하게 하기 */
+            transition: left 0.5s ease-out;
+            /* z 축으로 쌓이는 상대적인 위치 지정 */
+            z-index: 100;
+        }
+        .back-drop{
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* 투명도 주기 0~1사이 0은 완전 투명, 1은 완전 불투명 */
+            opacity: 0.5;
+            /* 페이지 로딩 시점에 안보이게 하기 (공간도 차지하지 않는다)*/
+            display: none; /* block | inline | inline-block ... */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <h3>메뉴입니다</h3>
+            <ul>
+                <li><a href="">짜장면</a></li>
+                <li><a href="">짬뽕</a></li>
+                <li><a href="">볶음밥</a></li>
+            </ul>
+        </div>
+        <button id="menuBtn">menu</button>
+        <h1>메인 컨텐츠 입니다.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vero dolorem, commodi rerum nobis, corrupti sunt perspiciatis adipisci dicta nihil enim saepe quas, fugit ratione sequi. Assumenda eius pariatur similique!</p>
+        <img src="images/image1.png" alt=""/>
+        <div class="back-drop"></div>
+    </div>
+    <script>
+        document.querySelector("#menuBtn")
+        .addEventListener("click", function(){
+            // .menu div 의 left 값을 0px 로 변화 시키기 
+            document.querySelector(".menu").style.left="0px";
+            // document.querySelector(".back-drop").style.display="block";
+        });
+
+        document.querySelector(".back-drop")
+        .addEventListener("click", function(){
+            document.querySelector(".menu").style.left="-200px";
+        });
+
+        // .back-drop div 의 상태값을 관리할 변수
+        var isBackDrop=false;
+
+        // .menu div에 transion이 끝났을때 실행할 함수 등록
+        document.querySelector(".menu")
+        .addEventListener("transitonend",function(){
+            if(isBackDrop){
+                document.querySelector(".back-drop").style.display="none";
+                isBackDrop=false;
+            }else
+                // .back-drop div를 보이게 하기
+                document.querySelector(".back-drop").style.display="block";
+                isBackDrop=true;
+        });
+    </script>
+</body>
+</html>

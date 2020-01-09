@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step14_overflow.html</title>
+    <style>
+        .wrapper {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border: 1px solid red;
+            overflow: scroll;
+            /* visible | scroll | hidden | auto */
+            /*
+                overflow-x : hidden;
+                overflow-y : scroll;
+                와 같이 x 방향 y 방향을 다르게 처리할 수도 있다.
+            */
+        }
+
+        .content {
+            width: 200px;
+            height: 500px;
+            background-color: #0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>overflow 처리하기</h1>
+    <div class="wrapper">
+        <div class="content">content</div>
+    </div>
+</body>
+
+</html>

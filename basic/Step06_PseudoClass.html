@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step06_PseudoClass.html</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        /* div요소면서 bg-yellow라는 클래스를 갖고있는 요소에 적용할 css */
+        div.bg-yellow{
+            background-color: yellow;
+        }
+        /* div요소면서 hover라는 가상 클래스를 갖고있는 요소에 적용할 css */
+        div:hover{
+            background-color: yellow;
+        }
+        input:focus{
+            background-color: yellow;
+        }
+        button:active{
+            width:100px;
+        }
+        a{
+            /* 링크의 밑줄 없애기 */
+            text-decoration: none;
+        }
+        a:link{/* 한번도 방문하지 않은 링크 */
+            color: #000;
+        }
+        a:visited{/* 이미 방문했던 링크 */
+            color: #000;
+        }
+        a:hover{ /* 마우스를 올렸을떄 */
+            text-decoration: underline;
+            color: blue
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo class(가상클래스) 선택자 연습</h1>
+    <!-- 마우스가 hover 되었을때 배경색이 바뀌는 div-->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- focus 가 왔을때 배경색이 바뀌는 input-->
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <!-- active 되었을때 (누르고 있을때) 크기가 바뀌는 버튼-->
+    <button>눌러보셈</button><br/>
+    <a href="http://daum.net">daum</a><br/>
+    <a href="http://android.com">android</a><br/>
+    <a href="http://14.63.164.99">study</a><br/>
+
+</body>
+</html>

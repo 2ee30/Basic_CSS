@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step07_Position2.html</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .spacer{
+            height: 500px;
+            background-color: #999;
+        }
+        #one{
+            /*
+                relative는 원래 배치되어야 하는 위치를 기준으로
+                상대 좌표에 배치된다.
+                top, left를 이용해서 배치 (음수값 可)
+            */
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        #two{
+            /* body를 기준으로 절대 좌표에 배치할 수 있다. */
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+        #three{
+            /* fixed는 window를 기준으로 고정된 좌표에 배치된다. */
+            position: fixed;
+            top: 200px;
+            left: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">static</div>
+    <div class="box" id="one">relative</div>
+    <div class="spacer"></div>
+    <div class="box" id="two">absolute</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis laudantium, autem nisi omnis, natus delectus dolorem suscipit magni vel quos quaerat, nam ut molestias! Quos cupiditate soluta iure vel dicta.</p>
+    <div class="box" id="three">fixed</div>
+</body>
+</html>

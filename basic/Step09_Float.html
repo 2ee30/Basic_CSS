@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step09_Float.html</title>
+    <style>
+        .container{
+            width: 768px;
+            margin: 0 auto;
+        }
+        p{
+            border: 1px solid red;
+            /* float 된 자식 요소를 감싸이 위한 방법 */
+            overflow: auto;
+        }
+        /* #one의 자손 중에서 img요소 선택 (한칸 띄어쓰기) */
+        #one img{
+            float: left; /* 왼쪽으로 띄우기 */
+            padding: 10px;
+        }
+        #two img{
+            float: right; /* 오른쪽(우상단)으로 띄우기 */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p id="one">
+        <img src="images/kim1.png" alt="">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa fuga temporibus dolores doloremque, itaque quibusdam maxime ut. Odit ratione laborum aliquid vitae pariatur dolores enim, earum aspernatur nisi beatae voluptates.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquam dignissimos temporibus vel, reiciendis minima fugiat cupiditate qui saepe asperiores sint rerum voluptatum magnam dolorum odit, sit eius exercitationem incidunt.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil commodi dignissimos neque quisquam? Quae numquam voluptatem aperiam animi labore in rem, dolor fugiat sequi corporis itaque a hic. Voluptatem, corporis?
+    </p>
+    <p id="two">
+        <img src="images/kim1.png" alt="">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa fuga temporibus dolores doloremque, itaque quibusdam maxime ut. Odit ratione laborum aliquid vitae pariatur dolores enim, earum aspernatur nisi beatae voluptates.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquam dignissimos temporibus vel, reiciendis minima fugiat cupiditate qui saepe asperiores sint rerum voluptatum magnam dolorum odit, sit eius exercitationem incidunt.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil commodi dignissimos neque quisquam? Quae numquam voluptatem aperiam animi labore in rem, dolor fugiat sequi corporis itaque a hic. Voluptatem, corporis?
+    </p>
+
+</div>
+</body>
+</html>

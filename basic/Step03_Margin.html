@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step03_Margin.html</title>
+    <style>
+        /* 아래 세가지 예는 모두 같다. */ 
+        #mg1{
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        #mg2{
+            margin: 10px 10px 10px 10px;
+        }
+        #mg3{
+            margin: 10px;
+        }
+        #mg4{
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+        }
+        #mg5{
+            margin: 10px 20px 30px 40px;
+        }
+        /* 따라서, 시계 방향 순서대로 (탑 라이트 바탐 레프트) 이해할것 */
+        #mg6{
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            margin-left: 40px;
+        }
+        #mg7{ 
+            /* 탑, 바탐 20px 이고 레프트, 라이트 40px */
+            margin: 20px 40px;
+        }
+        #mg8{
+            /* 탑 10px 이고 라이트,래프트 20px, 바탐 30px */
+            margin: 10px 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <button>버튼</button><br/>
+    <button id="mg1">버튼1</button><br/>
+    <button id="mg2">버튼2</button><br/>
+    <button id="mg3">버튼3</button><br/>
+    <button id="mg4">버튼4</button><br/>
+    <button id="mg5">버튼5</button><br/>
+    <button id="mg6">버튼6</button><br/>
+    <button id="mg7">버튼7</button><br/>
+    <button id="mg8">버튼8</button><br/>
+</body>
+</html>

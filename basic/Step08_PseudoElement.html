@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step08_PseudoElement.html</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        /* ::first-letter => 첫번째 글자 */
+        .first::first-letter{
+            color: red;
+            font-weight: bold;
+        }
+        /* ::first-line => 첫번째 줄 */
+        #one::first-line{
+            background-color: yellow;
+        }
+        /* 요소의 컨텐츠 바로 이전을 선택할 수 있는 가상요소 선택자 */
+        .quote::before{
+            content: "[";
+            color: blue;
+        }
+        /* 요소의 컨텐츠 바로 이후를 선택할 수 있는 가상요소 선택자 */
+        .quote::after{
+            content: "]";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pseudo Element(가상요소) 선택자 활용</h1>
+        <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere doloribus enim sunt sequi maxime, eveniet vel rerum blanditiis perferendis! Vitae magnam debitis vero odio non aliquam illo ab nulla!</p>
+        <p id="one" class="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quaerat laborum iusto dicta nesciunt qui debitis necessitatibus! Minus, aut error laborum totam eius suscipit est cumque possimus a? Delectus, quisquam.</p>
+        <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sed natus est necessitatibus eos ab amet ea, voluptate porro molestias alias odit quis praesentium vel modi repudiandae excepturi consequuntur itaque.</p>
+        <p class="quote">천리길도 한걸음 부터</p>
+        <p class="quote">열심히 공부 하자</p>
+        <p class="quote">이러쿵...저러쿵...</p>
+    </div>
+</body>
+</html>

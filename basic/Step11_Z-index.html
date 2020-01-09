@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step11_Z-index.html</title>
+    <style>
+        .wrapper{
+            position: relative;
+        }
+
+        .wrapper img{
+            position: absolute;
+            width: 300px;
+        }
+        /* img 요소의 부모요소 입장에서 1번째 자식요소 선택 */
+        .wrapper img:nth-child(1){
+            top: 100px;
+            left: 100px;
+            /* z-index 값이 클수록 앞에 쌓인다 */
+            z-index: 300;
+        }
+        /* img 요소의 부모요소 입장에서 2번째 자식요소 선택 */
+        .wrapper img:nth-child(2){
+            top: 150px;
+            left: 150px;
+            z-index: 200;
+        }
+        /* img 요소의 부모요소 입장에서 3번째 자식요소 선택 */
+        .wrapper img:nth-child(3){
+            top: 200px;
+            left: 200px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index 테스트</h1>
+    <div class="wrapper">
+        <img src="images/image1.png" alt="">
+        <img src="images/image2.png" alt="">
+        <img src="images/image3.png" alt="">
+    </div>
+</body>
+</html>

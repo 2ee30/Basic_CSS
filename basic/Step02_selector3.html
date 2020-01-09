@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step02_selector3.html</title>
+    <style>
+        .container{
+            width: 768px;
+            /* 위아래 마진: 0, 좌우 마진 auto */
+            margin: 0 auto; /* 가운데 정렬 */
+            background-color: #cecece;
+
+        }
+        /* 클래스명이 container 인 요소의 [자손] 중에서 p 요소 선택 */
+        .container p{
+            color: #ffff00;
+        }
+        /* body 의 [자식] 중에서 p 요소 선택 */
+        body > p{
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt nam quaerat, porro dolorum quo, libero iusto deserunt hic officia laborum assumenda non ea, perferendis placeat laudantium corporis repellendus expedita.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, amet? Numquam illo inventore id? Nemo accusamus ea doloremque nobis voluptatibus, expedita nisi corrupti quaerat consequuntur. Soluta nulla voluptas quasi provident.</p>
+</body>
+</html>

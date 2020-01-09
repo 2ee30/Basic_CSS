@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step05_Border.html</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box{
+            border-width: 5px; /* 경계선의 폭 */
+            border-style: dotted; /* 경계선 스타일 */
+            border-color: goldenrod; /* 경계선 색상 */
+        }
+        .box2{ /* 순서 상관없이 한 줄에 모두 기입 가능 */ 
+            border: 5px solid blue;
+        }
+        .box3{
+			/* border-width: 10px; 를 풀어서 쓰면 */
+			border-top-width: 10px;
+			border-right-width: 10px;
+			border-bottom-width: 10px;
+			border-left-width: 10px;
+			/* border-style: dotted; */
+			border-top-style: dotted;
+			border-right-style: dotted;
+			border-bottom-style: dotted;
+			border-left-style: dotted;
+			/* border-color: red;*/
+			border-top-color: red;
+			border-right-color: red;
+			border-bottom-color: red;
+			border-left-color: red;
+        }
+        .box4{
+            border-width: 10px 10px 10px 10px;
+            border-style: dotted dotted dotted dotted ;
+            border-color: red;
+        }
+        .box5{
+            border-width: 10px 20px 30px 40px;
+            border-style: solid dotted dashed inset;
+            border-color: red green blue pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">야호</div>
+    <div class="box2">호야</div>
+    <div class="box3">삐릿</div>
+    <div class="box4">쿵쿵</div>
+    <div class="box5">뾰롱</div>
+</body>
+</html>

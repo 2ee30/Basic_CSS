@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step13_Unit.html</title>
+    <style>
+        html {
+            font-size: 10px; /* default 값: 16px */
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .container div {
+            background-color: yellow;
+        }
+
+        #one {
+            width: 100px;
+        }
+
+        #two {
+            width: 10%;
+        }
+
+        #three {
+            /* 상속된 글자 크기(원래 표시되어야할 글자크기)의 20 배 */
+            width: 20em;
+        }
+
+        #four {
+            /* html 요소에 지정된 글자 크기의 20 배 */
+            width: 20rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="one">width:100px</div>
+        <div id="two">width:10%</div>
+        <div id="three">width:20em</div>
+        <div id="four">width:20rem</div>
+    </div>
+</body>
+</html>

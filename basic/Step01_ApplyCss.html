@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step01_ApplyCss.html</title>
+    <!-- head 의 자식요소로 title 밑에 작성-->
+    <!-- 외부 css 로딩하기 -->
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        /*
+            여기는 내부 css 영역 입니다 
+            [문법]
+
+            선택자{
+                css 속성 : css 속성값 ;
+                css 속성2 : css 속성값2 ;
+                .
+                .
+            }
+        */
+        /* 요소명 선택자는 요소명을 적어주면 된다. */
+        p{
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- style 속성을 이용한 inline css / 적용하고 싶은 요소에 직접-->
+    <p style="color: blue;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem deserunt pariatur nesciunt magni perferendis iure, vero delectus? Earum aliquam ullam unde laboriosam odit quis perferendis alias voluptatibus dolorem laudantium.</p>
+    <p style="color: red;">두번째 p요소</p>
+    <input type="text" style="color:green"/>
+</body>
+</html>

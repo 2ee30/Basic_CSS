@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step09_example.html</title>
+    <style>
+        .nav ul{
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+
+        .nav li{
+            float: left;
+        }
+
+        p{
+            clear:left;
+        }
+        /* nav의 배경색을 검정색으로 */
+        .nav{
+            background-color: #000;
+            overflow: auto; /* flaot된 자식 요소를 감쌀 수 있도록*/
+        }
+        .nav a{
+            color: #999;
+            text-decoration: none;
+            display: block; /* 위아래 padding 도 가질 수 있다. */
+            padding: 10px 20px;
+        }
+        .nav a:hover{
+            color: #fff;
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <h1>네비게이션 요소 만들기</h1>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Game</a></li>
+            <li><a href="#">Cafe</a></li>
+            <li><a href="#">Contracts</a></li>
+        </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam animi, cumque doloremque eos vel maiores qui nisi veritatis iusto, unde iure exercitationem, porro aliquam eum reiciendis vero velit harum.</p>
+</body>
+</html>

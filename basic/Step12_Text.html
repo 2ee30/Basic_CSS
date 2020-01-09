@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step12_Text.html</title>
+    <style>
+        .wrapper1{
+            /* 글자 스타일 [자손 요소로 상속된다] */
+            font-style: italic;
+            /*  글꼴 [자손 요소로 상속된다] 
+                글꼴 이름에 띄어쓰기가 있으면 따옴표로 감싸야 한다.
+                왼쪽에서부터 순서대로 적용
+            */
+            font-family: "Times New Roman" Consolas, Gothic, serif;
+            /* 글자의 굵기 [자손 요소로 상속된다] */
+            font-weight: bold;
+            /* 글자의 크기 [자손 요소로 상속된다] */
+            font-size: 20px;
+            /* 글자 장식 [자손 요소로 상속된다] */
+            text-decoration: underline;
+            /* 색상 [자손 요소로 상속된다] */
+            color: red;
+        }
+        .wrapper2{
+            /* 글자 변환 [자손 요소로 상속된다] */
+            text-transform: capitalize;
+            /* 자간 [자손 요소로 상속된다] */
+            letter-spacing: 5px;
+            /* 행간 [자손 요소로 상속된다] */
+            line-height: 30px;
+            /* 첫단어 들여쓰기 */
+            text-indent: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem expedita in excepturi corrupti odit
+            molestiae quas illum error, eaque! Sapiente, eius. Suscipit natus eveniet, saepe maiores culpa ea dicta
+            deserunt.</p>
+    </div>
+    <div class="wrapper2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum libero magnam itaque, sequi corporis maxime
+            ipsum natus aliquam ad expedita hic perferendis doloremque commodi, ea! Commodi voluptatibus alias ex
+            accusamus.</p>
+    </div>
+    <div class="wrapper3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum libero magnam itaque, sequi corporis maxime
+            ipsum natus aliquam ad expedita hic perferendis doloremque commodi, ea! Commodi voluptatibus alias ex
+            accusamus.</p>
+    </div>
+</body>
+
+</html>

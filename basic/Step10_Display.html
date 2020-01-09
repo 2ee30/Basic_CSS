@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step10_Display.html</title>
+    <style>
+        #two{
+            /* 공간도 차지하지 않고 보이지 않게 */
+            display: none;
+        }
+        #five{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button id="showBtn">블럭요소2 보이게 하기</button>
+<button id="showBtn2">인라인요소2 보이게 하기</button>
+<p id="one">블럭요소1 입니다.</p>
+<p id="two">블럭요소2 입니다.</p>
+<p id="three">블럭요소3 입니다.</p>
+<span id="four">인라인요소1</span>
+<span id="five">인라인요소2</span>
+<span id="six">인라인요소3</span>
+<script>
+    document.querySelector("#showBtn")
+    .addEventListener("click",function(){
+        // block 요소를 보이게 할 떄는 display : block
+        document.querySelector("#two").style.display="block"
+    });
+    document.querySelector("#showBtn2")
+    .addEventListener("click",function(){
+        // inline 요소를 보이게 할 때는 display : inline
+        document.querySelector("#five").style.display="inline"
+    });
+</script>
+</body>
+</html>

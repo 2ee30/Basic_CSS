@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step12_Text2.html</title>
+    <style>
+        div {
+            border: 1px solid red;
+        }
+
+        #one {
+            /* 글자 정렬 left | center | right | justify */
+            text-align: left;
+        }
+
+        #two {
+            text-align: center;
+        }
+
+        #three {
+            text-align: right;
+        }
+
+        .wrapper {
+            /* inline 의 특징을 가지고 있는 요소를 가운데 정렬 할 수 있다. */
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* inline 요소의 성격과 block 요소의 특징을 함께 가지고 있다. */
+            display: inline-block;
+        }
+
+        #four {
+            text-align: justify; /* 늘려서 우측공간 채우기 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">김구라</div>
+    <div id="two">해골</div>
+    <div id="three">원숭이</div>
+    <div class="wrapper">
+        aaa <div class="box"></div> bbb
+    </div>
+    <p id="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ut excepturi maxime at enim, quod
+        mollitia neque quae rem inventore quam numquam molestiae possimus accusamus consequatur sint eveniet aspernatur
+        eligendi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in quos quis laboriosam quasi impedit totam
+        animi voluptates recusandae dolore et nesciunt alias quaerat nulla debitis rem, minus labore explicabo!</p>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step09_Float2.html</title>
+    <style>
+        .container{
+            width: 768px;
+            margin: 0 auto;
+        }
+        .box{
+            float: left;
+            background-color: yellow;
+            /* float 하면 폭과 높이는 최소한의 크기만 가지는데 
+            임의로 변경도 가능하다 */
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        p{  
+            /* flaot 된 요소 때문에 왼쪽이 지저분해 지지 않게 하기 */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>block 요소를 가로로 배치하기</h1>
+    <div class="box">div1</div>
+    <div class="box">div2</div>
+    <div class="box">div3</div>
+    <div class="box">div4</div>
+    <div class="box">div5</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam esse debitis rerum qui, non assumenda officiis doloremque odio laboriosam deserunt sunt animi nam quas. Iure odio ducimus quo esse.</p>
+</div>
+</body>
+</html>
